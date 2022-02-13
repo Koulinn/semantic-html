@@ -8,10 +8,15 @@ table {
     box-sizing: border-box;
     border-collapse: collapse;
     border-spacing: 0;
-    /* background-image: url('https://cdn.glitch.me/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fleopardskin.jpg');
-    background-size: contain; */
 
     margin: auto;
+}
+
+table caption {
+    caption-side: bottom;
+    text-align: right;
+    margin-top: 16px;
+    margin-right: 16px;
 }
 
 thead {
@@ -19,12 +24,28 @@ thead {
     border-right: 2px solid #800080;
 }
 
+th {
+    border: 3px solid #800080;
+    padding: 16px;
+}
+
 thead,
 tfoot {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
         url('https://cdn.glitch.me/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fleopardskin.jpg');
     color: white;
-    margin: 0px;
+}
+
+thead,
+tfoot td,
+caption {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+tfoot td {
+    padding: 16px;
 }
 
 thead th:first-child,
@@ -59,9 +80,6 @@ td:first-child {
 }
 
 tfoot td {
-    font-family: 'Rock Salt', cursive;
-    font-size: 1rem;
-    font-weight: 700;
     border: 3px solid #800080;
     padding: 16px;
 }
