@@ -4,29 +4,14 @@
 
 table {
     width: 100%;
-    border: 2px solid #800080;
+    border: 3px solid #800080;
     box-sizing: border-box;
     border-collapse: collapse;
     border-spacing: 0;
-}
+    /* background-image: url('https://cdn.glitch.me/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fleopardskin.jpg');
+    background-size: contain; */
 
-thead,
-tfoot {
-    /* border-bottom: 2px solid #800080; */
-    background-image: linear-gradient(
-            to bottom,
-            rgb(253 254 255 / 20%),
-            rgb(0 0 0 / 73%)
-        ),
-        url('./assets/leopardskin.jpg');
-    background-repeat: repeat;
-    background-size: 50%;
-    color: white;
-    margin: 0px;
-}
-
-tbody {
-    border: 2px solid #800080;
+    margin: auto;
 }
 
 thead {
@@ -34,19 +19,26 @@ thead {
     border-right: 2px solid #800080;
 }
 
-tfoot td {
-    font-family: 'Rock Salt', cursive;
-    font-size: 1.125rem;
-    font-weight: 700;
+thead,
+tfoot {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+        url('https://cdn.glitch.me/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fleopardskin.jpg');
+    color: white;
+    margin: 0px;
 }
 
-tfoot td:first-child {
-    text-align: end;
+thead th:first-child,
+thead th:last-child {
+    width: 30%;
 }
 
-td {
-    font-family: 'Helvetica Neue';
-    padding: 1rem;
+tbody tr {
+    background-image: url('./assets/noise.png');
+}
+
+th {
+    border: 3px solid #800080;
+    padding: 16px;
 }
 
 tbody tr:nth-child(even) {
@@ -54,4 +46,32 @@ tbody tr:nth-child(even) {
 }
 tbody tr:nth-child(odd) {
     background-color: #ff33cc;
+}
+
+td {
+    font-family: 'Helvetica Neue';
+    padding: 1rem;
+    text-align: center;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+tfoot td {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 3px solid #800080;
+    padding: 16px;
+}
+
+tfoot td:first-child {
+    text-align: end;
+}
+
+tfoot td:nth-child(2) {
+    font-family: 'Helvetia Neue';
+    font-size: 1.25rem;
+    text-align: left;
 }
