@@ -1,95 +1,95 @@
 /* CSS files add styling rules to your content */
 
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
 
 table {
-    width: 100%;
-    border: 3px solid #800080;
-    box-sizing: border-box;
-    border-collapse: collapse;
-    border-spacing: 0;
+  width: 100%;
+  border: 3px solid #800080;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  border-spacing: 0;
 
-    margin: auto;
+  margin: auto;
 }
 
 table caption {
-    caption-side: bottom;
-    text-align: right;
-    margin-top: 16px;
-    margin-right: 16px;
+  caption-side: bottom;
+  text-align: right;
+  margin-top: 16px;
+  margin-right: 16px;
 }
 
 thead {
-    font-family: 'Rock Salt', cursive;
-    border-right: 2px solid #800080;
+  font-family: "Rock Salt", cursive;
+  border-right: 2px solid #800080;
 }
 
 th {
-    border: 3px solid #800080;
-    padding: 16px;
+  border: 3px solid #800080;
+  padding: 16px;
 }
 
 thead,
 tfoot {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-        url('https://cdn.glitch.me/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fleopardskin.jpg');
-    color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url("./assets/leopardskin.jpg");
+  color: white;
 }
 
 thead,
 tfoot td,
 caption {
-    font-family: 'Rock Salt', cursive;
-    font-size: 1rem;
-    font-weight: 700;
+  font-family: "Rock Salt", cursive;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 tfoot td {
-    padding: 16px;
+  padding: 16px;
 }
 
 thead th:first-child,
 thead th:last-child {
-    width: 30%;
+  width: 30%;
 }
 
 tbody tr {
-    background-image: url('./assets/noise.png');
+  background-image: url("./assets/noise.png");
 }
 
 th {
-    border: 3px solid #800080;
-    padding: 16px;
+  border: 3px solid #800080;
+  padding: 16px;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #e495e4;
+  background-color: #e495e4;
 }
 tbody tr:nth-child(odd) {
-    background-color: #ff33cc;
+  background-color: #ff33cc;
 }
 
 td {
-    font-family: 'Helvetica Neue';
-    padding: 1rem;
-    text-align: center;
+  font-family: "Helvetica Neue";
+  padding: 1rem;
+  text-align: center;
 }
 
 td:first-child {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 tfoot td {
-    border: 3px solid #800080;
-    padding: 16px;
+  border: 3px solid #800080;
+  padding: 16px;
 }
 
 tfoot td:first-child {
-    text-align: end;
+  text-align: end;
 }
 
 tfoot td:nth-child(2) {
-    font-family: 'Helvetia Neue';
-    font-size: 1.25rem;
-    text-align: left;
+  font-family: "Helvetia Neue";
+  font-size: 1.25rem;
+  text-align: left;
 }
